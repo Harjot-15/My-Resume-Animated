@@ -88,6 +88,7 @@ main {
 
 .link-container {
     display: flex;
+    width:300px;
     gap: 20px;
     background: none; /* Set background to none */
     padding: 10px 20px;
@@ -134,7 +135,26 @@ main {
     transform: translateY(-5px);
 }
 
-/*                                        */
+/*     Dark Mode     */
+
+.dark-mode .link-container {
+    background: #333; /* Dark background for the container */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+}
+
+.dark-mode .profile-link {
+    color: #fff; /* White text color */
+}
+
+.dark-mode .profile-link:hover {
+    color: #000; /* Black text on hover */
+    background-color: #e0e0e0; /* Lighter background on hover */
+}
+
+.dark-mode .profile-link::before {
+    background-color: #555; /* Darker green shade for the hover animation */
+}
+
 /*                                        */
 /*                                        */
 /*                                        */
